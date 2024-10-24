@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(110, 115, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  main{
+    max-width: 400px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  button, input{
+    padding: 10px;
+    border-radius: 20px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  button{
+    transition: 1s ease;
+    background-color: rgb(40, 40, 190);
+    color: white;
+    font-size: 16px;
+    padding: 0px 20px;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.196);
+  }
+
+  input{
+    max-width: 100px;
+    font-size: 28px;
+    padding: 1px;
+  }
+
+  button:hover{
+    transition: 0.5s ease;
+    background-color: white;
+    color: rgb(40, 40, 190);
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.452);
+  }
+
+
+  
+  /* Estilos para el modal */
+  .modal {
+    display: none; 
+    /* Con position fixed garantizamos que left: 0 y top: 0 se cumplan
+    Con esta position fixed ofrecemos la posibilidad de posicionar el div como deseamos
+    ocupando todo el espacio de la pagina */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .close {
+    color: #e9ebec;
+    float: right;
+    font-size: 26px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    border: 50px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.452);
+  }
+
+
+  .close:hover{
+    transition: 0.5s ease;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.244);
+    background-color: rgb(204, 50, 50);
+    cursor: pointer;
+  }

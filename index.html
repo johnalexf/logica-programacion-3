@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main>
+
+        <h1>
+            Calculadora de factorial de un entero
+        </h1>
+
+        <h2>
+            Por favor escriba un numero entero
+        </h2>
+
+        <input type="text" id="inputDatoIngresado" name="inputDatosIngresados" placeholder="escribe un # entero">
+
+        <button id="botonCalcularFactorial">
+            Calcular
+        </button>
+
+        <div id="divResultadoFactorial">
+            <!-- Div para mostrar el resultado o si el valor ingresado no es un entero -->
+        </div>
+
+        <!-- Modal para mostrar el error si el valor no es un número entero -->
+        <div id="errorModal" class="modal">
+            <div class="modal-content">
+            <div class="close" onclick="cerrarModal()">&times;</div>
+            <h3>El valor ingresado no es un número entero válido.</h3>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    
+    <script src="./script.js"> </script>
+</body>
+</html>
